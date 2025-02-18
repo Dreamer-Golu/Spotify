@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="navleft">
+            <img src="assets\logo.png" alt="">
+            <i class="fa-solid fa-house"></i>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="What do you want to play ?">
+                <i class="fa-solid fa-window-maximize"></i>
+            </div>
+        </div>
+        <div class="navright">
+            <button class="same">Explore Premium</button>
+            <button class="same black"><i class="fa-regular fa-circle-down"></i>Install App</button>
+            <i class="fa-regular fa-bell"></i>
+            <div class="loginInfo">
+                <h1>V</h1>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <div class="top">
+                <div class="library">
+                    <img title="Collapse your library" src="assets\library_icon.png" alt="">
+                    <h1>Your Library</h1>
+                </div>
+                <div class="icon">
+                    <i title="Add playlist" class="fa-solid fa-plus"></i>
+                    <i title="Show more" class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="librarycard">
+                <h1><b>Create your first playlist</b></h1>
+                <p>It's is easy, We'll help you</p>
+                <button class="same">Create Playlist</button>
+            </div>
+            <div class="librarycard">
+                <h1><b>Let's find some podcasts to follow</b></h1>
+                <p>We'll keep you updated on new episodes</p>
+                <button class="same">Browse podcasts</button>
+            </div>
+        </div>
+        <div class="musicbar">
+            <header>
+                <h3>All</h3>
+                <h3>Music</h3>
+                <h3>Podcasts</h3>
+            </header>
+            <div class="maincontent">
+                <div class="playlist">
+                    <div id="heading">
+                        <h1>Featured Charts</h1>
+                        <h3>Show All</h3>
+                    </div>
+                    <div id="cards">
+                        <div class="card">
+                            <img src="assets\card1img.jpeg" alt="">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets\card2img.jpeg" alt="">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets\card3img.jpeg" alt="">
+                            <p>Your weekly update of the most played...</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets\card4img.jpeg" alt="">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets\card5img.jpeg" alt="">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets\card6img.jpeg" alt="">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently">
+                    <div id="heading">
+                        <h1>Recently Played</h1>
+                        <h3>Show All</h3>
+                    </div>
+                    <div id="cards">
+                        <div class="card">
+                            <img src="assets\card1img.jpeg" alt="">
+                            <p>Top songs <br> -India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="empty"></div>
+        <div class="playbar">
+            <div class="controls">
+                <img class="change"  src="assets\player_icon1.png" alt="">
+                <img class="change" src="assets\player_icon2.png" alt="">
+                <img class="resume" src="assets\player_icon3.png" alt="">
+                <img class="change" src="assets\player_icon4.png" alt="">
+                <img class="change" src="assets\player_icon5.png" alt="">
+            </div>
+            <div class="timer">
+                <span class="currTime">00:00</span>
+                <input type="range" min="0" max="100">
+                <span class="totTime">3:33</span>
+            </div>
+        </div>
+        <div class="volume"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
